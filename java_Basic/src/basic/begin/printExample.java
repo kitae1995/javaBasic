@@ -43,6 +43,10 @@ public class printExample {
 		//printf도 ln이 없으니까 줄 게행은 없음 탈출코드는 \n을 써야함
 		System.out.println("메롱메롱");
 		
+		
+		  //실수를 표현하는 서식문자 %f -> 기본 6자리까지 표현.
+        //%.[자리수를 지정하는 숫자]f -> 원하는 자리수까지 표현.
+        //%라는 문자 자체를 표현할 때는 %% 쓰시면 됩니다.
 		double rate = 64.126;
 		System.out.printf("합격률은 :%.2f 입니다.\n",rate);
 		// %.2 <- 소숫점 2자리 까지만 (반올림도 해줌)
