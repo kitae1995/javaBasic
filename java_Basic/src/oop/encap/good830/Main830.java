@@ -6,13 +6,17 @@ public class Main830 {
 			
 		Mybirth830 my = new Mybirth830();
 		//my.year = 1992
-		my.setYear(123);
+		my.setYear(1995);
 		
-		my.setMonth(121);
+		my.setMonth(12);
 		
+		my.setday(12);
 		
-		my.isValidateMonth();
 		my.birthInfo();
+		
+		
+		
+		
 
 	}
 

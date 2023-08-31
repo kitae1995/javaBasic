@@ -73,24 +73,50 @@ public class Mybirth830 {
 		return this.month;
 	}
 	
-	public void birthInfo() {
-		if(this.year == 0 || this.month ==0) {
-			System.out.println("년 혹은 월의 입력이 잘못 되었습니다");
+	
+	
+	public void setday(int day) {
+		if(day>31 || day<1) {
+			System.out.println("잘못된 일 입니다");
 		}else {
-		System.out.printf("내 생일은 %d년 %d월입니다",this.year,this.month);
+			if(this.month == 0) {
+				System.out.println("일자를 입력하기 위해선 월 입력이 선행되어야 한다");
+				return;
+			}
+			if(!isValidateMonth(day)) {
+				System.out.println("월에 따른 일자가 올바르지 않습니다");
+				return;
+			}
+			this.day = day;
 		}
-		//year, month ,day 셋 중 단 하나라도 제대로 값이 세팅되지 않았다면
-		//출력을 해주지 않는 메서드.
+	}
+	public int getDay() {
+		return this.day;
 	}
 	
-	public void isValidateMonth() {
-		if(this.month == 0) {
-			System.out.println("월의 입력이 잘못 되었습니다 다시 입력해 주세요");
-		}else {
-			System.out.println("월이 정상적으로 입력되었습니다");
+	
+	
+	public void birthInfo() {
+		if(this.year == 0 || this.month == 0 || this.day == 0 ) {
+			System.out.println("날짜 필드 중 초기화 되지 않은 데이터가 있습니다.");
+			return;
 		}
-		// 각 월에 적합한 일자가 세팅이 되어있는지 판별하는 메서드
-		
+		System.out.printf("내 생일은 %d년 %월 %일 입니다.\n",this.year,this.month,this.day);
+	}
+	
+	private boolean isValidateMonth(int day) {
+		switch(this.month) {
+		case 2:
+			if(day>28) {
+				return false;
+			}
+		case 4: case 6: case 9: case 11:
+			if(day>30) {
+				return false;
+			}
+			default:
+				return true;
+		}
 	}
 	
 	/*
