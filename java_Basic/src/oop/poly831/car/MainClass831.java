@@ -48,6 +48,11 @@ public class MainClass831 {
 		
 		Car831 c = Kim.buyCar("테슬라");
 		c.run();
+		Tesla myTesla = (Tesla) c;
+		myTesla.activeAutoPilot();
+		
+//		Tesla myTesla = (Tesla)kim.buyCar("테슬라");
+//		myTesla.activeAutoPilot(); - 위의 메서드를 이런 방식으로 호출할수도 있음
 		
 		
 	}

@@ -29,16 +29,19 @@ public class MainClass831 {
 		Hunter830 h1 = new Hunter830("사냥꾼1");
 		Hunter830 h2 = new Hunter830("사냥꾼1");
 		
-		Player830[] p = {w1,w2,m2,h1,h2};
+//		Player830[] p = {w1,w2,m2,h1,h2};
+//		
+//		m1.blizzard(p);
+//		
+//		
+//		Player830[] enemy = {w1,w2,m1,m2,h2};
+//		h1.hawkshot(enemy);
+//		m1.blizzard(p);
+//		h1.hawkshot(enemy);
+//		
+		Player830[] w = {w2,m1,m2,h1,h2};		
 		
-		m1.blizzard(p);
-		
-		
-		Player830[] enemy = {w1,w2,m1,m2,h2};
-		h1.hawkshot(enemy);
-		m1.blizzard(p);
-		h1.hawkshot(enemy);
-		
+		w1.rush(w);
 		
 	}
 	

@@ -29,5 +29,6 @@ public class Mage830 extends Player830 {
 	}
 	
 	
+	
 	 
 }
