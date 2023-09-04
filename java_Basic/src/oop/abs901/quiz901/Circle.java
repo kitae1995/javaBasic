@@ -6,6 +6,7 @@ public class Circle extends Shape {
 	
 	
 	Circle(int r) {
+		
 		radius = r;
 	}
 	
@@ -13,5 +14,12 @@ public class Circle extends Shape {
 		System.out.printf("반지름이 %d인 원의 넓이는 %.1f\n",radius,radius*radius*Math.PI);
 	}
 	
+	public int getRadius() {
+		return radius;
+	}
+	
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
 	
 }
