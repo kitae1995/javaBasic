@@ -17,7 +17,7 @@ public class ThrowEXample905 {
      코드의 흐름을 바꿔 줄 수가 있습니다.
     */
 	
-	static int calcTotal(int num) throws Exception {
+	static int calcTotal(int num) throws Exception  {
 		if(num<=0) {
 			//이 시점에서 강제로 에러를 발생
 			throw new Exception();
